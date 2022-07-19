@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js_form</title>
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+      <div class="card mt-5">
+          <div class="card-header">
+              School Exam Grading
+          </div>
+          <div class="card-body">
+              <h4 id="grade"></h4>
+              <form action="#" class="" id="">
+                  <label for="Enter Number">Enter Number</label>
+                  <input type="number" class="form-control" placeholder="enter your score" id="guess"><br>
+                  <button type="button" class="btn btn-info" onclick="grade()">Click here for grading</button>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      
+  
+  function grade(){ 
+    let score = Number(document.getElementById('guess').value);   
+    if (score >= 40){
+    document.getElementById("grade").innerHTML = `Fortunately, Congratulations, you pass this course 🎁`; 
+    }else{
+        document.getElementById("grade").innerHTML = `Unfortunately, you failed this course 🙄`;
+    }
+   
+    
+  } 
+  
+  
+  
+  </script>
+    
+
+
+
+
+
+    <script src="practice.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
